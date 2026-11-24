@@ -1,0 +1,11 @@
+{
+    "description": "Attaches a provisioned Azure VM's network interfaces to the network security group in its azure_nsg field.",
+    "id": "OHK-t8fjx0kz",
+    "max_retries": 0,
+    "name": "Azure NSG - Attach VM to NSG",
+    "resource_technologies": [],
+    "script_filename": "OHK-t8fjx0kz_script.py",
+    "shared": true,
+    "target_os_families": [],
+    "type": "CloudBolt Plug-in"
+}

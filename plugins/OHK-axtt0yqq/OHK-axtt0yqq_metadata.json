@@ -1,0 +1,62 @@
+{
+    "action_inputs": [
+        {
+            "allow_multiple": false,
+            "available_all_servers": false,
+            "description": "CloudBolt Environment to deploy into; its Azure resource handler supplies the subscription and tenant written to the workspace as ARM_SUBSCRIPTION_ID / ARM_TENANT_ID.",
+            "field_dependency_controlling_set": [],
+            "field_dependency_dependent_set": [],
+            "global_options": [],
+            "hide_if_default_value": false,
+            "id": "CF-fadb8j34",
+            "label": "Environment",
+            "name": "env_id",
+            "placeholder": null,
+            "relevant_osfamilies": [],
+            "required": true,
+            "show_as_attribute": false,
+            "show_on_servers": false,
+            "type": "INT",
+            "value_pattern_string": null
+        },
+        {
+            "allow_multiple": false,
+            "available_all_servers": false,
+            "description": "JSON object of the no-code module's variable name/value pairs from the order form's Dynamic Panel, where the reserved 'workspace_name' key names the HCP Terraform workspace and the CloudBolt resource and the reserved '_sensitive' key lists the variables written to TFC as sensitive.",
+            "field_dependency_controlling_set": [],
+            "field_dependency_dependent_set": [],
+            "global_options": [],
+            "hide_if_default_value": false,
+            "id": "CF-f5r5lnc8",
+            "label": "Module Variables (JSON)",
+            "name": "parameters",
+            "placeholder": "{}",
+            "relevant_osfamilies": [],
+            "required": false,
+            "show_as_attribute": false,
+            "show_on_servers": false,
+            "type": "TXT",
+            "value_pattern_string": null
+        }
+    ],
+    "action_inputs_sequence": [
+        "env_id",
+        "parameters"
+    ],
+    "dependencies": {
+        "sharedModules": [
+            "shared_modules/SHM-9h13o859",
+            "shared_modules/SHM-jlguerjr",
+            "shared_modules/SHM-r0oq14r7"
+        ]
+    },
+    "description": "Provisions infrastructure from a pinned HCP Terraform no-code module into a chosen CloudBolt environment's Azure subscription through a workspace that HCP Terraform auto-applies.",
+    "id": "OHK-axtt0yqq",
+    "max_retries": 0,
+    "name": "HCP Terraform No-Code Module",
+    "resource_technologies": [],
+    "script_filename": "OHK-axtt0yqq_script.py",
+    "shared": false,
+    "target_os_families": [],
+    "type": "CloudBolt Plug-in"
+}

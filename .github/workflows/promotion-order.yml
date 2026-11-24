@@ -1,0 +1,31 @@
+name: Promotion order
+
+on:
+  pull_request:
+    branches: [staging, main]
+    types: [opened, edited, reopened, synchronize]
+
+# The check only reads event metadata; it needs no token scopes.
+permissions: {}
+
+jobs:
+  promotion-order:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check source branch
+        env:
+          BASE: ${{ github.base_ref }}
+          HEAD: ${{ github.head_ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          case "$BASE" in
+            staging) expected=develop ;;
+            main)    expected=staging ;;
+            *)       echo "::error::Unexpected base branch $BASE"; exit 1 ;;
+          esac
+          if [ "$HEAD_REPO" != "$REPO" ] || [ "$HEAD" != "$expected" ]; then
+            echo "::error::PRs into $BASE must come from $expected in $REPO (got $HEAD_REPO:$HEAD)."
+            exit 1
+          fi
+          echo "OK: $REPO:$HEAD -> $BASE"

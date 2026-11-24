@@ -1,0 +1,11 @@
+{
+    "description": "Evaluates the resource handler's tag map against order and resource parameters and stores the result in cb_generated_tags.",
+    "id": "OHK-xoajww7v",
+    "max_retries": 0,
+    "name": "Generate Tags from Resource Handler Tag Map",
+    "resource_technologies": [],
+    "script_filename": "OHK-xoajww7v_script.py",
+    "shared": true,
+    "target_os_families": [],
+    "type": "CloudBolt Plug-in"
+}

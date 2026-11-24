@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+        "sharedModules": [
+            "shared_modules/SHM-bbswv27r"
+        ]
+    },
+    "description": "Deletes the Azure deployment stack behind the resource and the resources it manages.",
+    "id": "OHK-t2gs5caq",
+    "max_retries": 0,
+    "name": "Teardown Bicep Deployment",
+    "resource_technologies": [],
+    "script_filename": "OHK-t2gs5caq_script.py",
+    "shared": true,
+    "target_os_families": [],
+    "type": "CloudBolt Plug-in"
+}

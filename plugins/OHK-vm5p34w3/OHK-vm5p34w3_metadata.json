@@ -1,0 +1,11 @@
+{
+    "description": "Removes the deleted resource group's resource_group_arm option from environments on the same subscription.",
+    "id": "OHK-vm5p34w3",
+    "max_retries": 0,
+    "name": "Remove Resource Group from Environments",
+    "resource_technologies": [],
+    "script_filename": "OHK-vm5p34w3_script.py",
+    "shared": true,
+    "target_os_families": [],
+    "type": "CloudBolt Plug-in"
+}

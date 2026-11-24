@@ -1,0 +1,12 @@
+{
+    "description": "OpenShift REST client, size-tier catalog, and environment helpers for the landing-zone blueprint.",
+    "id": "SHM-qmiweowv",
+    "label": "OpenShift Landing Zone",
+    "max_retries": 0,
+    "module_name": "openshift_landing_zone",
+    "name": "openshift_landing_zone",
+    "resource_technologies": [],
+    "script_filename": "SHM-qmiweowv_script.py",
+    "shared": true,
+    "type": "Shared Module"
+}
