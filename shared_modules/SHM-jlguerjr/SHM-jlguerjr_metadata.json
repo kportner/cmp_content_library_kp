@@ -1,0 +1,12 @@
+{
+    "description": "HCP Terraform REST client and run engine for workspace-per-deployment provisioning.",
+    "id": "SHM-jlguerjr",
+    "label": "HCP Terraform API",
+    "max_retries": 0,
+    "module_name": "tfc_api",
+    "name": "tfc_api",
+    "resource_technologies": [],
+    "script_filename": "SHM-jlguerjr_script.py",
+    "shared": true,
+    "type": "Shared Module"
+}

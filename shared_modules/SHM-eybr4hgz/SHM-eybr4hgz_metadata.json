@@ -1,0 +1,12 @@
+{
+    "description": "GitHub API client that authenticates with the GitHub ConnectionInfo when one is usable and otherwise fetches public repositories anonymously, with directory listing, raw file download, and archive fetch.",
+    "id": "SHM-eybr4hgz",
+    "label": "GitHub",
+    "max_retries": 0,
+    "module_name": "github",
+    "name": "github",
+    "resource_technologies": [],
+    "script_filename": "SHM-eybr4hgz_script.py",
+    "shared": true,
+    "type": "Shared Module"
+}

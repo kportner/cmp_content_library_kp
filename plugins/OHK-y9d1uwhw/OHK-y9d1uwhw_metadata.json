@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "sharedModules": [
+            "shared_modules/SHM-9h13o859",
+            "shared_modules/SHM-jlguerjr"
+        ]
+    },
+    "description": "Destroys the HCP Terraform workspace behind a no-code deployment with a destroy run and a safe workspace delete.",
+    "id": "OHK-y9d1uwhw",
+    "max_retries": 0,
+    "name": "Teardown HCP Terraform No-Code Module",
+    "resource_technologies": [],
+    "script_filename": "OHK-y9d1uwhw_script.py",
+    "shared": false,
+    "target_os_families": [],
+    "type": "CloudBolt Plug-in"
+}
